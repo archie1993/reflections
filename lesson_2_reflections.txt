@@ -1,0 +1,11 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When we initialize a repo (repository), there aare no commits.
+to initialize a repo, command is : git init.
+another command is git status, which shows which all files have changed since last commit.
+git log fails when we initialize a repo, it shows an error, so we shud use git status.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is an intermediate stage where all files which we want to commit together are added.
