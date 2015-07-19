@@ -1,0 +1,40 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Fc is a command used for comparing two files. Full form of FC is file compare.
+
+The syntax is : FC file_1.txt file_2.txt
+It showed only those lines which were different in the two docs
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+It will help us identify and rectify mistakes, and also give an insight into what our original thought process.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros: 
+
+There will be a logical change b/w different commits.
+
+
+Cons:
+
+We have to make a judgement call. It might be wrong.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Its Purely their choice
+
+How can you use the commands git log and git diff to view the history of files?
+
+type git log to view the log, scrll down to view entire log, press q to quit. To use git diff, syntax is git diff older_file_id newer_file_id.
+
+How might using version control make you more confident to make changes that could break something?
+
+It makes me very confident as I am able to compare different commits.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+All of my projects.
