@@ -1,6 +1,6 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-When we initialize a repo (repository), there aare no commits.
+When we initialize a repo (repository), there are no commits.
 to initialize a repo, command is : git init.
 another command is git status, which shows which all files have changed since last commit.
 git log fails when we initialize a repo, it shows an error, so we shud use git status.
@@ -8,4 +8,24 @@ git log fails when we initialize a repo, it shows an error, so we shud use git s
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-Staging area is an intermediate stage where all files which we want to commit together are added.
+Staging area is an intermediate stage where all files which we want to commit together are added. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+We add what we want to commit to staging area first. Then we can use command git diff to compare working directory and staging area. We can use command git diff --staged  to compare staging area and the mosr recent commit in repository. We use git diff older_commit newer_commit to compare two commits.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When we want to experiment from some point, or we want to follow 2 paths. They also help to work on separate features parallely.
+git branch				  : shows us the different branches. branch with * is the active branch
+git branch new_branch_name 		  : creates new branch
+git checkout already_existing_branch_name : switches to that branch
+git merge branch1 branch2 		  : merges branch2 into branch1, eg git merge master coins- merges coins into master
+git show commit_id 			  : shos difference between a commit and its parent without knowing id of parent commit
+git banch -d branch_name 		  : deletes branch. Notte that it only deletes the label and not the commits. But if there are some commits that cannot be 						    reached by another branch, then they will be lost.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The two branches become one.A new commit is created which becomes the tip of those two branches.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+I dont know
