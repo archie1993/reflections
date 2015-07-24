@@ -1,1 +1,16 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+When we know that different persons are working on project and they need to collabrate with each other.
+some commands are:
+
+git remote 	: To view all remotes present.
+git remote add remote_name url_of_repository  : Adds the remote in repository on github in which remote is to be created
+git remote -v   : shows url  where you wud fetch data from and url to which u wud push data to.
+git push remote_name branch_name  : pushes branch in local directory to github
+git pull remote_name branch_name  : pulls branch from github to local directory 
+
+Note: We generally name remote as origin. Pull takes a branch from remote and brings it to local repo. {ush does opposite, takes a branch from local repository and pushes it to remote.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+So that i dont get buggy code, and also to avoid chaos.
